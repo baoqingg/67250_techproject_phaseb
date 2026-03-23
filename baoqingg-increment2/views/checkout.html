@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        <nav> 
+            <a id="navselected" href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="ticketQuantity">Ticket Quantity:</label><br>
+        <input type="number" id="ticketQuantity" name="ticketQuantity" min="1" max="10"><br><br>
+
+        <input type="submit" value="Purchase">
+    </form>
+
+    <footer>
+        <p>&copy; 2026 MonoMuse. All rights reserved.</p>
+    </footer>
+</body>
+</html>
