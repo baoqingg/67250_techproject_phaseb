@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Museum, Contemporary Art, Technology, Pittsburgh, MonoMuse">
+  <meta name="description" content="MonoMuse – a contemporary museum exploring the intersection of art, technology, and human creativity in Pittsburgh, PA.">
+  <title>MonoMuse – Home</title>
+  <link rel="stylesheet" href="./static/style.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+  <script src="./static/script.js" defer></script>
+</head>
+<body>
+<div class="container">
+ 
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html"><img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo"></a>
+  </header>
+ 
+  <!-- Nav -->
+  <nav class="nav_bar">
+    <a href="index.html">Home</a>
+    <a href="views/explore.html">Explore</a>
+    <a href="views/exhibitions.html">Exhibitions</a>
+    <a href="views/buytickets.html">Buy Tickets</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</a>
+  </nav>
+ 
+  <!-- Main -->
+  <main class="main fade-in">
+ 
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="eyebrow">Pittsburgh, PA · Est. 2016</span>
+        <h1 id="greeting" class="hero-title">Welcome to <em>MonoMuse</em></h1>
+        <p class="hero-desc">A contemporary museum dedicated to exploring the intersection of art, technology, and human creativity through immersive exhibitions and interactive installations.</p>
+        <div class="hero-ctas">
+          <a class="btn ticketlink-cta" href="views/buytickets.html">Buy Tickets</a>
+          <a class="btn btn-outline" href="views/exhibitions.html">View Exhibitions</a>
+        </div>
+      </div>
+ 
+      <div class="hero-visual">
+        <div class="hero-card">
+          <span class="hours-chip">Open Today</span>
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>Hours</strong>
+              Mon–Fri 9am – 5pm
+            </div>
+            <div class="info-item">
+              <strong>Weekend</strong>
+              Sat–Sun 10am – 6pm
+            </div>
+            <div class="info-item">
+              <strong>Location</strong>
+              Pittsburgh, PA 15213
+            </div>
+            <div class="info-item">
+              <strong>Contact</strong>
+              info@monomuse.org
+            </div>
+          </div>
+          <div class="info-grid mt-16">
+            <div class="info-item"><span class="stat">$18</span><p class="stat-label mb-0">Adult admission</p></div>
+            <div class="info-item"><span class="stat">$10</span><p class="stat-label mb-0">Student admission</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- About snippet -->
+    <section>
+      <p class="section-label">About the Museum</p>
+      <div class="read-more-block">
+        <p id="shortIntro">MonoMuse is a contemporary museum dedicated to exploring the evolving relationship between art, technology, and society. Our mission is to inspire curiosity and creativity by showcasing innovative exhibitions that highlight how digital tools, emerging technologies, and human imagination shape the future of artistic expression.</p>
+        <span id="readMore" role="button" tabindex="0">Read More ↓</span>
+        <p id="longIntro">Since opening in 2016, MonoMuse has grown into a dynamic cultural institution that bridges the gap between traditional art appreciation and cutting-edge digital experiences. Our galleries rotate seasonal exhibitions featuring both established and emerging artists who work at the intersection of code, computation, and creativity. We believe that understanding technology is inseparable from understanding contemporary art — and that both should be accessible to everyone. Whether you are a student, a seasoned collector, or simply curious, MonoMuse offers something to surprise and inspire you.</p>
+        <span id="readLess" role="button" tabindex="0">Read Less ↑</span>
+      </div>
+    </section>
+ 
+    <!-- Membership Banner -->
+    <div class="membership-banner">
+      <div>
+        <h2>Become a Member</h2>
+        <p>Unlock year-round access, exclusive previews, and a deeper connection to the art you love.</p>
+      </div>
+      <a class="btn" href="views/buytickets.html">Learn More →</a>
+    </div>
+ 
+  </main>
+ 
+  <footer class="footer">
+    <p id="copyYear"></p>
+  </footer>
+ 
+</div>
+</body>
+</html>

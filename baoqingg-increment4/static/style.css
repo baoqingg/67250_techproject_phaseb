@@ -1,0 +1,178 @@
+* {
+  padding: 5px;
+  margin: 5px;
+  background: #0b0b0c;
+  color:  #f5f5f7;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid; /* Turns this div into a CSS Grid layout */
+  grid-template-areas:   /* Defines the layout structure using named areas */
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+}
+
+.header {
+   grid-area: header; /* Places the header element into the "header" area of the grid */
+}
+.nav_bar {
+   grid-area: nav_bar; 
+   display: flex; 
+   justify-content: right;
+}
+.main {
+  grid-area: main; 
+  display: flex; 
+  flex-wrap: wrap; /* Allows child elements to wrap onto new lines if necessary */
+  flex-direction: row; /* Aligns child elements in a horizontal row */
+}
+.main_img {
+   grid-area: main-img; /* Places the image into the "main-img" area */
+}
+.footer {
+   grid-area: footer; /* Places the footer into the "footer" area */
+}
+
+#logo {
+  width: 18%;   /* adjust size */
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5f5f7;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+ .active {
+  color:#92ad70;  
+}
+
+nav a:hover {
+  border-color: #4d5c3b;
+  }
+
+.ticketlink-cta {
+  padding: 10px 14px;
+  margin: 20px 10; 
+  display: inline-block;
+  background: #92ad70;
+  color: #0b0b0c;
+  border-color: #4d5c3b;
+  border-radius: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+
+form * {
+  margin: auto;
+  text-align: center;
+}
+
+ footer {
+  border-top: 1px solid rgba(245,245,247,.12);
+  padding: 18px 16px;
+  text-align: center;
+  color: rgba(245,245,247,.72);
+  }
+
+ #readLess, #longIntro {
+  display: none;
+ }
+ 
+ #readLess, #readMore {
+  font-style: italic;
+  background-color: darkslategray;
+  color: white;
+ }
+
+
+.ticket_tables {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ticket_tables table {
+  border-collapse: collapse;
+  background-color: #111; /* dark gray instead of pure black */
+  color: #f5f5f5;
+  border-radius: 3px;
+  width: fit-content;
+
+}
+
+.ticket_tables th,
+.ticket_tables td {
+  border: 1px solid #ccc;
+}
+
+.ticket_tables th {
+  background-color: #222;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#ticketForm {
+   display: none;
+   margin-top: 20px;
+   padding: 15px;
+   border: 1px solid #ccc;
+   width: 300px;
+    }
+
+.ticket_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 3px;
+  color: #f5f5f5;
+}
+  .ticket_form label {
+  margin-top: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+.ticket_form input {
+  width: 95%;
+  padding: 6px;
+  margin-top: 4px;
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.ticket_form input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 20px 10; 
+  display: inline-block;
+  background: #92ad70;
+  color: #0b0b0c;
+  border-color: #4d5c3b;
+  border-radius: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 15px auto 0 auto; /* centers horizontally */
+  display: block;
+  }

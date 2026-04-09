@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Museum website redesign project">
+    <title>MonoMuse</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <script
+    src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+    
+
+
+ <style>
+
+    /* Hide the purchase form when the page first loads */
+
+  </style>
+
+</head>
+<body onload="addYear()">
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="buytickets.html">Buy Tickets</a>
+      <!-- Hamburger icon -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+    </nav>
+
+  
+    <div class="main buytickets_main">
+    <section class="ticket_tables">
+    <h2>Buy Tickets</h2>
+    <table>
+        <tr>
+          <th>Ticket Type</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Adult</td>
+          <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+          <td>$18</td>
+        </tr>
+        <tr>
+          <td>Student</td>
+          <td>Student ID required</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Member</td>
+          <td>Member ID required</td>
+          <td>$15</td>
+        </tr>
+    </table>
+
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th> </th>
+    </tr>
+    <tr>
+      <td>April 5</td>
+      <td>10:00 AM</td>
+      <td><button onclick="showForm('April 5')">Add to Cart</button></td>
+    </tr>
+    <tr>
+      <td>April 12</td>
+      <td>1:00 PM</td>
+      <td><button onclick="showForm('April 12')">Add to Cart</button></td>
+    </tr>
+    <tr>
+      <td>April 19</td>
+      <td>3:00 PM</td>
+      <td><button onclick="showForm('April 19')">Add to Cart</button></td>
+    </tr>
+  </table>
+  </section>
+ 
+  <section class="ticket_form">
+  <form id="ticketForm">
+    <h2>Purchase Tickets</h2>
+
+    <label for="visitDate">Selected Date:</label>
+    <input type="text" id="visitDate" name="visitDate" readonly />
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="quantity">Number of Tickets:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" required/>
+
+    <button type="button" onclick="submitPurchase()">Buy Tickets</button>
+  </form>
+  </section>
+  </div>
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+</body>
+</html>
